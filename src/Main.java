@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
   public static void main(String[] args) {
@@ -12,5 +15,19 @@ public class Main {
       дома и один многоквартирный.
       Выведите информацию о домах в списке с использованием цикла for-each.
      */
+
+    List<House> houseList = new ArrayList<>();
+    houseList.add(new ApartmentHouse("Kyiv, Kreschatik, 24", 4));
+    houseList.add(new PrivateHouse("Mezhyhirya, 001"));
+    houseList.add(new PrivateHouse("Foros, 13"));
+    for (House h : houseList
+    ) {
+      System.out.println(h);
+    }
+    for (House h : houseList
+    ) {
+      System.out.println(h.destruct());
+    }
+
   }
 }

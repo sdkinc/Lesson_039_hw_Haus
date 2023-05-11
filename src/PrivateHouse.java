@@ -13,4 +13,9 @@ public class PrivateHouse extends House {
   public String toString() {
     return "This is private house with address: " + getAddress();
   }
+
+  @Override
+  public String destruct() {
+    return "You demolished a private house";
+  }
 }

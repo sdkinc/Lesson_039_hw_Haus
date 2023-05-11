@@ -18,6 +18,8 @@ public abstract class House {
     this.address = address;
   }
 
+  public abstract String destruct();
+
   @Override
   public abstract String toString();
 }

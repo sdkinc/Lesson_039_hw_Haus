@@ -23,7 +23,12 @@ public class ApartmentHouse extends House {
 
   @Override
   public String toString() {
-    return "This is private house with address: " + getAddress()+" with "+getNumberOfEntrances()+
-        "entrances";
+    return "This is apartment house with address: " + getAddress() + " with " +
+        getNumberOfEntrances() + " entrances";
+  }
+
+  @Override
+  public String destruct() {
+    return String.format("You demolished an apartment house. %d entrances", getNumberOfEntrances());
   }
 }
