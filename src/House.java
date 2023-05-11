@@ -1,11 +1,12 @@
 public abstract class House {
+
   /*
       В качестве аргумента конструктора принимайте адрес.
       Напишите для адреса сеттер и геттер.
    */
   private String address;
 
-  public House(String address){
+  public House(String address) {
     this.address = address;
   }
 
@@ -16,4 +17,7 @@ public abstract class House {
   public void setAddress(String address) {
     this.address = address;
   }
+
+  @Override
+  public abstract String toString();
 }
